@@ -8,4 +8,6 @@ RUN npm install && npm cache clean --force
 
 COPY . /app
 
-CMD npm run dev
+RUN npm run build
+
+CMD npm start
